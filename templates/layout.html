@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community App</title>
+</head>
+<body>
+
+    <header> <!--site title + site navigation + specialised welcome message-->
+       {% block header %}
+        <div>{% block heading %}{% endblock %}</div>
+        <div>{% block navigation %}{% endblock %}</div>
+        <div>{% block username %}{% endblock %}</div>
+       {% endblock %}
+    </header>
+
+    <section><!--Main Content -->
+        {% block content %}
+        {% endblock %}
+    </section>
+
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
+
+</body>
+</html>
